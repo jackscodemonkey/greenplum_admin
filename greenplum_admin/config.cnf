@@ -1,0 +1,40 @@
+[backup]
+; account with superuser access to the database and write access to the
+; file system. typically gpadmin
+; backup_user=gpadmin
+backup_user=gpadmin
+
+; path to store the backups
+backup_path=/backup/greenplum_backups
+
+; backup options for gpcrondump, see the help file for more
+backup_options=""
+
+; The number full backups to keep.
+; If incrementals are used they will also be kept between full backups.
+; This rotation logic is driven off the backup_days section.
+keep_full_backups=2
+
+; the master directory, should be in the environment variable $MASTER_DATA_DIRECTORY
+; for gpadmin
+greenplum_master_directory=/data/master/gpseg-1
+
+[backup_days]
+; this is the rotation for the backups
+; the script will execute the type of backups specified on the
+; day it is executed.
+;
+; options:
+;   full = a full backup of the database
+;   incremental = An incremental backup from the last full.
+;                 Hash tables are always fully backed up.
+;                 You're only saving space/time here if you have
+;                 append only tables
+;   none = don't backup today
+mon=incremental
+tues=incremental
+wed=incremental
+thurs=incremental
+fri=incremental
+sat=full
+sun=none
