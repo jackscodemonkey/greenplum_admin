@@ -1,9 +1,11 @@
 greenplum_admin package
 =======================
 
-greenplum_backup
+Greenplum Backup
 ----------------
 
+Introduction
+^^^^^^^^^^^^
 This is a wrapper script for `gpcrondump`_.
 The purpose is to manage rotation of backups automatically.
 
@@ -15,6 +17,12 @@ The purpose is to manage rotation of backups automatically.
 .. click:: greenplum_admin.greenplum_backup:main
    :prog: greenplum_backup
    :show-nested:
+
+Config file
+^^^^^^^^^^^
+
+.. literalinclude:: ../../../greenplum_admin/config.ini
+
 
 .. automodule:: greenplum_admin.greenplum_backup
    :members:
