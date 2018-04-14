@@ -1,0 +1,3 @@
+[console_scripts]
+greenplum_backup = greenplum_admin.greenplum_backup:main
+

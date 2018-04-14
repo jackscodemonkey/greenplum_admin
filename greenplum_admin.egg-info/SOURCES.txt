@@ -1,0 +1,12 @@
+README.rst
+setup.py
+greenplum_admin/__init__.py
+greenplum_admin/greenplum_backup.py
+greenplum_admin.egg-info/PKG-INFO
+greenplum_admin.egg-info/SOURCES.txt
+greenplum_admin.egg-info/dependency_links.txt
+greenplum_admin.egg-info/entry_points.txt
+greenplum_admin.egg-info/requires.txt
+greenplum_admin.egg-info/top_level.txt
+tests/__init__.py
+tests/test_sample.py

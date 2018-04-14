@@ -9,7 +9,7 @@ click==6.7
 cookiecutter==1.6.0
 docutils==0.14
 future==0.16.0
-greenplum-admin==0.1.0
+-e git+https://github.com/jackscodemonkey/greenplum_admin@280624151581d1b7d932a905d24e6379caf7705e#egg=greenplum_admin
 idna==2.6
 imagesize==1.0.0
 Jinja2==2.10
